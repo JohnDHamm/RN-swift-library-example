@@ -2,7 +2,7 @@
   "name": "react-native-test-wrapper",
   "title": "React Native Test Wrapper",
   "version": "1.0.0",
-  "description": "",
+  "description": "some description",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,15 +25,13 @@
   "peerDependencies": {
     
     "react": "16.2.0",
-    "react-native": "^0.52.0",
-    "react-native-windows": "0.52.0"
+    "react-native": "^0.52.0"
 
   },
   "devDependencies": {
     
     "react": "16.2.0",
-    "react-native": "^0.52.0",
-    "react-native-windows": "0.52.0"
+    "react-native": "^0.52.0"
 
   }
 }

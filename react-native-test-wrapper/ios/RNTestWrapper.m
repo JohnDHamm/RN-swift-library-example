@@ -1,17 +1,7 @@
-#import "RNTestWrapper.h"
+#import "React/RCTBridgeModule.h"
 
-@implementation RNTestWrapper
+@interface RCT_EXTERN_MODULE(RNTestWrapper, NSObject)
 
-RCT_EXPORT_MODULE()
-
-- (dispatch_queue_t)methodQueue
-{
-    return dispatch_get_main_queue();
-}
-
-RCT_EXPORT_METHOD(sampleMethod:(NSString *)stringArgument numberParameter:(nonnull NSNumber *)numberArgument callback:(RCTResponseSenderBlock)callback)
-{
-    // TODO: Implement
-}
+RCT_EXTERN_METHOD(callbackMethod: (RCTResponseSenderBlock)callback)
 
 @end
