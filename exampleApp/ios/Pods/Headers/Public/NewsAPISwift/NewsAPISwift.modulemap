@@ -1,0 +1,6 @@
+module NewsAPISwift {
+  umbrella header "NewsAPISwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

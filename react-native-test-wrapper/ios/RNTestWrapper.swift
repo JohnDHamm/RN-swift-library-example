@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import NewsAPISwift
 
 @objc(RNTestWrapper)
 class RNTestWrapper: NSObject {
@@ -19,5 +20,29 @@ class RNTestWrapper: NSObject {
     @objc
     static func requiresMainQueueSetup() -> Bool {
         return true
+    }
+    
+    @objc
+    func getSources(
+        _ resolve: @escaping RCTPromiseResolveBlock,
+        rejecter reject: @escaping RCTPromiseRejectBlock
+        ) -> Void {
+        let newsAPI = NewsAPI(apiKey: "a057fed1fb1e4a8484b7af5f08de4b25")
+        newsAPI.getSources(category: .technology, language: .en, country: .us) { result in
+            switch result {
+            case .success(let sources):
+                //do something with sources
+                print("sources: \(sources[0])")
+                let firstSource : String = sources[0].name
+                let secondSource : String = sources[1].name
+                print("firstSource: \(firstSource)")
+                let sourcesArray : Array = [firstSource, secondSource]
+                resolve(sourcesArray)
+            case .failure(let error):
+                //handle error
+                print("nope \(error)")
+                reject("nope", "news api err msg", error)
+            }
+        }
     }
 }

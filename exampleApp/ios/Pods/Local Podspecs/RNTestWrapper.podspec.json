@@ -1,0 +1,25 @@
+{
+  "name": "RNTestWrapper",
+  "version": "1.0.0",
+  "summary": "some description",
+  "description": "RNTestWrapper",
+  "homepage": "https://github.com/author/RNTestWrapper",
+  "license": "MIT",
+  "authors": {
+    "author": "author@domain.cn"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source": {
+    "git": "https://github.com/author/RNTestWrapper.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "ios/**/*.{h,m}",
+  "requires_arc": true,
+  "dependencies": {
+    "NewsAPISwift": [
+
+    ]
+  }
+}

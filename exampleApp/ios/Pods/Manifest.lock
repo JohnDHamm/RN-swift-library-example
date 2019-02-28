@@ -1,0 +1,23 @@
+PODS:
+  - NewsAPISwift (2.0)
+  - RNTestWrapper (1.0.0):
+    - NewsAPISwift
+
+DEPENDENCIES:
+  - RNTestWrapper (from `../node_modules/react-native-test-wrapper`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - NewsAPISwift
+
+EXTERNAL SOURCES:
+  RNTestWrapper:
+    :path: "../node_modules/react-native-test-wrapper"
+
+SPEC CHECKSUMS:
+  NewsAPISwift: 61b069546b0170b48ee3ef7a0158b294e125d7b7
+  RNTestWrapper: 64349ee22ab3f427e44eac45b6045cc11f7f09ec
+
+PODFILE CHECKSUM: e77799e915811859685b8949b23b25ed85c34d43
+
+COCOAPODS: 1.5.3

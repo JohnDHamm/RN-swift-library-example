@@ -13,13 +13,13 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   # s.license    = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author       = { "author" => "author@domain.cn" }
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "11.0"
   s.source       = { :git => "https://github.com/author/RNTestWrapper.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m}"
   s.requires_arc = true
 
-  s.dependency "React"
-  #s.dependency "others"
+  #s.dependency "React"
+  s.dependency "NewsAPISwift"
 end
 
