@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc(RNSwiftTest)
+@objc(RNTestWrapper)
 class RNTestWrapper: NSObject {
     
     @objc

@@ -10,25 +10,34 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
+import BridgeTest from './bridge-test';
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Example App</Text>
-        <Text style={styles.instructions}>testing a RN wrapper for SDK with native Pod dependencies</Text>
+        <View style={styles.header}>
+          <Text style={styles.welcome}>Example App</Text>
+          <Text style={styles.instructions}>testing a RN wrapper for SDK with native Pod dependencies</Text>
+        </View>
+        <BridgeTest/>
       </View>
     );
   }
 }
 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'stretch',
     backgroundColor: '#F5FCFF',
+  },
+  header: {
+    backgroundColor: "#BADA55",
+    paddingVertical: 30,
   },
   welcome: {
     fontSize: 20,
