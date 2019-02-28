@@ -21,10 +21,10 @@ An example for testing building a RN wrapper for an iOS SDK with Pod dependency
 
 
 *next up:*
-
 > • add `NewsAPISwift` dependency to library `.podspec` and expose `newsAPI.getSources` method in Swift
 
-##End Goal:
+
+## End Goal:
 **As a** React Native dev with little to no native dev experience,
 
 **I want** to be able to build a RN app utilizing some native SDKs which are available as a CocoaPod/whatever the Android equivalent is,
@@ -33,12 +33,12 @@ An example for testing building a RN wrapper for an iOS SDK with Pod dependency
 
 *implementation:*
 1. create a new RN app via `react-native init MyProject`
-2. `cd MyProect`
+2. `cd MyProject`
 2. install library: `yarn add <some-react-native-library>`
 3. `react-native link <some-react-native-library>`
 4. `cd ios`
 5. `pod init`
-6. add to Podfile: `pod: 'RNSomeModule', path: '../node_moodules/<some-react-native-library>`
+6. add to Podfile: `pod: 'RNSomeModule', path: '../node_modules/<some-react-native-library>'`
 7. `pod install`
 8. in RN app: 
 ```javascript
