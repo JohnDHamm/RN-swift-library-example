@@ -19,6 +19,16 @@ export default class BridgeTest extends Component<Props> {
       console.log("testing callback: ", res);
       this.setState({callbackMsg: res});
     })
+    this.getSources()
+  }
+
+  getSources() {
+    RNTestWrapper.getSources()
+      .then(sources => {
+        console.log("getSources res", sources);
+        // this.setState({sources})
+      })
+      .catch(e => console.log(e.message, e.code))
   }
 
   render() {
