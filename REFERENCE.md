@@ -36,7 +36,8 @@ Lots of info here that may be useful to someone with more knwoledge of iOS/Xcode
 
 
 ## React-Native docs:
-https://facebook.github.io/react-native/docs/native-modules-ios\
+https://facebook.github.io/react-native/docs/native-modules-ios
+
 https://facebook.github.io/react-native/docs/linking-libraries-ios
 
 
