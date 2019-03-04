@@ -38,7 +38,7 @@ An example for testing building a RN wrapper for an iOS SDK with Pod dependency
 3. `react-native link <some-react-native-library>`
 4. `cd ios`
 5. `pod init`
-6. add to Podfile: `pod: 'RNSomeModule', path: '../node_modules/<some-react-native-library>'`
+6. add to Podfile: `pod 'RNSomeModule', path: '../node_modules/<some-react-native-library>'`
 7. `pod install`
 8. in RN app: 
 ```javascript
