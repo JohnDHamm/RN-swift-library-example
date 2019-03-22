@@ -1,7 +1,24 @@
 # RN-swift-library-example
 An example for testing building a RN wrapper for an iOS SDK with Pod dependency
 
-*steps taken:*
+
+### To run the example app (`master` branch):
+1. Clone the repo
+2. `cd RN-swift-library-example/exampleApp/`
+3. `yarn install`
+4. Copy `react-native-test-wrapper` directory to `node_modules` of exampleApp (eventually this will be `yarn add [package name]`)
+5. `react-native link react-native-test-wrapper`
+6. open `exampleApp.xcodeproj` in XCode and build and run (should see app screen with message of "callback message from swift")
+
+
+### To run on `add_pod` branch:
+1. `react-native unlink react-native-test-wrapper`
+2. replace the `react-native-test-wrapper` directory in `node_modules` of exampleApp with `react-native-test-wrapper` directory of this branch
+3. `react-native link react-native-test-wrapper`
+4. open `exampleApp.xcworkspace` in XCode and build and run (currently failing with "NewsAPISwift" is not a module - can't seem to connect the native module to the CocoaPad)
+
+
+*how master branch was created:*
 
 1. Created library scaffold with `react-native-create-library react-native-test-wrapper` (note: from master, not current outdated npm package)
 
@@ -15,13 +32,10 @@ An example for testing building a RN wrapper for an iOS SDK with Pod dependency
 
 6. add empty swift file (needed per RN docs when bridging with a Swift library)
 
-7. test bridge to library with importing library into RN exampleApp
+7. test RN exampleApp
 
 -- CONFIRMATION THAT BRIDGED LIBRARY IS WORKING (no netive dependency yet)
 
-
-*next up:*
-> • add `NewsAPISwift` dependency to library `.podspec` and expose `newsAPI.getSources` method in Swift
 
 
 ## End Goal:
