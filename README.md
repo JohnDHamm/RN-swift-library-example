@@ -15,7 +15,8 @@ An example for testing building a RN wrapper for an iOS SDK with Pod dependency
 1. `react-native unlink react-native-test-wrapper`
 2. replace the `react-native-test-wrapper` directory in `node_modules` of exampleApp with `react-native-test-wrapper` directory of this branch
 3. `react-native link react-native-test-wrapper`
-4. open `exampleApp.xcworkspace` in XCode and build and run (currently failing with "NewsAPISwift" is not a module - can't seem to connect the native module to the CocoaPad)
+4. open `exampleApp.xcworkspace` in XCode and add the API key to `RNTestWrapper.swift` (replace the temp string)
+5. build and run (currently failing with "NewsAPISwift" is not a module - can't seem to connect the native module to the CocoaPad)
 
 
 *how master branch was created:*
