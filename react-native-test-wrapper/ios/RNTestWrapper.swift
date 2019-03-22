@@ -27,7 +27,7 @@ class RNTestWrapper: NSObject {
         _ resolve: @escaping RCTPromiseResolveBlock,
         rejecter reject: @escaping RCTPromiseRejectBlock
         ) -> Void {
-        let newsAPI = NewsAPI(apiKey: "a057fed1fb1e4a8484b7af5f08de4b25")
+        let newsAPI = NewsAPI(apiKey: "API_KEY_GOES_HERE")
         newsAPI.getSources(category: .technology, language: .en, country: .us) { result in
             switch result {
             case .success(let sources):
